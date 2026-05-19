@@ -57,40 +57,52 @@ export function Navbar() {
             </a>
 
             {/* Desktop Navigation */}
-            <div className="hidden lg:flex items-center gap-8">
+            <div className="hidden lg:flex items-center gap-10">
               {navLinks.map((link) => (
                 <a
                   key={link.label}
                   href={link.href}
-                  className={`text-sm font-light tracking-wide transition-colors duration-300 hover:text-[#1a1a1a] ${
-                    scrolled ? 'text-[#666]' : 'text-[#666]'
-                  }`}
+                  className="relative text-[14px] font-medium tracking-[0.02em] text-[#6f675e] hover:text-[#2d2a26] transition-all duration-300 group"
                 >
                   {link.label}
+
+                  <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-[#b8965a] transition-all duration-300 group-hover:w-full" />
                 </a>
               ))}
             </div>
 
             {/* CTA Button */}
-            <div className="hidden lg:flex items-center gap-4">
+            <div className="hidden lg:flex items-center gap-5">
+              
               <a
                 href="tel:81993918154"
-                className={`text-sm font-light tracking-wide transition-colors duration-300 flex items-center gap-2 ${
-                  scrolled ? 'text-[#666] hover:text-[#1a1a1a]' : 'text-[#666] hover:text-[#1a1a1a]'
-                }`}
+                className="group flex items-center gap-3 text-[#6f675e] hover:text-[#2d2a26] transition-all duration-300"
               >
-                <Phone className="w-4 h-4" />
-                <span className="hidden xl:inline">(81) 99391-8154</span>
+                <div className="w-9 h-9 rounded-full bg-[#f3ede6] flex items-center justify-center group-hover:bg-[#c9a869]/20 transition-all duration-300">
+                  <Phone className="w-4 h-4" />
+                </div>
+
+                <div className="flex flex-col leading-none">
+                  <span className="text-[10px] uppercase tracking-[0.18em] text-[#9b8f81] font-medium mb-1">
+                    Contato
+                  </span>
+
+                  <span className="text-[14px] font-medium tracking-[0.02em]">
+                    (81) 99391-8154
+                  </span>
+                </div>
               </a>
+
               <a
                 href="https://wa.me/5581993918154?text=Olá! Gostaria de agendar uma consulta no MJ Studio Beauty."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-[#1a1a1a] text-white px-6 py-2.5 rounded-full text-sm font-light tracking-wide hover:bg-[#2a2a2a] transition-all duration-300 hover:shadow-lg hover:shadow-black/10 flex items-center gap-2"
+                className="bg-[#2d2a26] text-[#faf8f5] px-7 py-3 rounded-full text-[14px] font-medium tracking-[0.02em] hover:bg-[#3d3832] transition-all duration-300 hover:shadow-xl hover:shadow-black/10 flex items-center gap-2 hover:scale-[1.02]"
               >
                 <Calendar className="w-4 h-4" />
                 Agendar
               </a>
+
             </div>
 
             {/* Mobile Menu Button */}
