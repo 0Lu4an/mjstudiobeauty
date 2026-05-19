@@ -39,10 +39,20 @@ export function Navbar() {
           <div className="flex items-center justify-between">
             {/* Logo */}
             <a href="#" className="relative z-10">
-              <h1 className={`text-xl lg:text-2xl font-light tracking-tight transition-colors duration-300 ${
-                scrolled ? 'text-[#1a1a1a]' : 'text-[#1a1a1a]'
-              }`}>
-                MJ Studio <span className="italic text-[#666]">Beauty</span>
+              <h1
+                className={`text-[1.85rem] lg:text-[2.15rem] leading-none tracking-[-0.035em] transition-all duration-300 ${
+                  scrolled ? "text-[#1f1f1f]" : "text-[#1f1f1f]"
+                }`}
+                style={{
+                  fontFamily: '"Cormorant Garamond", serif',
+                  fontWeight: 500,
+                }}
+              >
+                MJ Studio{" "}
+                
+                <span className="italic text-[#8b7e6f] font-[400]">
+                  Beauty
+                </span>
               </h1>
             </a>
 
