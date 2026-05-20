@@ -214,58 +214,53 @@ export function Navbar() {
               {/* Bottom */}
               <div className="absolute bottom-0 left-0 w-full p-6 border-t border-[#d9d3cb]/40 bg-white/40 backdrop-blur-xl">
                 
-                {/* Contact */}
-                <div className="mb-5">
-                  <p className="text-[11px] uppercase tracking-[0.25em] text-[#8b7e6f] mb-3">
+                {/* Contact + Social */}
+                <div className="mt-6 pt-5 border-t border-[#e7e1d8]/70">
+                  <p className="text-[10px] uppercase tracking-[0.2em] text-[#8b7e6f] mb-3">
                     Contato
                   </p>
 
-                  <a
-                    href="tel:81993918154"
-                    className="flex items-center gap-3 text-[#2d2a26]"
-                  >
-                    <div className="w-10 h-10 rounded-full bg-[#c9a869]/15 flex items-center justify-center">
-                      <Phone className="w-4 h-4 text-[#c9a869]" />
+                  <div className="flex items-center justify-between">
+                    
+                    <div className="flex items-center gap-3">
+                      <div className="w-10 h-10 rounded-full bg-[#c9a869]/15 flex items-center justify-center">
+                        <Phone className="w-4 h-4 text-[#c9a869]" />
+                      </div>
+
+                      <div>
+                        <p className="text-sm font-medium text-[#2d2a26]">
+                          (81) 99391-8154
+                        </p>
+
+                        <p className="text-xs text-[#8b7e6f]">
+                          Atendimento via WhatsApp
+                        </p>
+                      </div>
                     </div>
 
-                    <span className="text-sm font-medium">
-                      (81) 99391-8154
-                    </span>
-                  </a>
+                    <div className="flex items-center gap-2">
+                      <a
+                        href="https://www.instagram.com/mj_studiobeauty/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-10 h-10 rounded-full bg-white shadow-md flex items-center justify-center text-[#2d2a26] hover:bg-[#c9a869] hover:text-white transition-all duration-300"
+                      >
+                        <FaInstagram className="w-4 h-4" />
+                      </a>
+
+                      <a
+                        href="https://wa.me/5581993918154"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-10 h-10 rounded-full bg-white shadow-md flex items-center justify-center text-[#2d2a26] hover:bg-[#25D366] hover:text-white transition-all duration-300"
+                      >
+                        <FaWhatsapp className="w-4 h-4" />
+                      </a>
+                    </div>
+
+                  </div>
                 </div>
-
-                {/* CTA */}
-                <a
-                  href="https://wa.me/5581993918154?text=Olá! Gostaria de agendar um horário no MJ Studio Beauty."
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-full bg-[#2d2a26] text-white rounded-full py-4 flex items-center justify-center gap-2 text-sm font-medium tracking-wide hover:bg-[#3b352f] transition-all duration-300 shadow-xl shadow-black/10"
-                >
-                  <Calendar className="w-4 h-4" />
-                  Agendar Consulta
-                </a>
-
-                {/* Social */}
-                <div className="flex items-center justify-center gap-4 mt-6">
-                  <a
-                    href="https://www.instagram.com/mj_studiobeauty/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-11 h-11 rounded-full bg-white shadow-md flex items-center justify-center text-[#2d2a26] hover:bg-[#c9a869] hover:text-white transition-all duration-300"
-                  >
-                    <FaInstagram className="w-4 h-4" />
-                  </a>
-
-                  <a
-                    href="https://wa.me/5581993918154"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-11 h-11 rounded-full bg-white shadow-md flex items-center justify-center text-[#2d2a26] hover:bg-[#25D366] hover:text-white transition-all duration-300"
-                  >
-                    <FaWhatsapp className="w-4 h-4" />
-                  </a>
-                </div>
-              </div>
+              </div> 
             </motion.div>
           </>
         )}
