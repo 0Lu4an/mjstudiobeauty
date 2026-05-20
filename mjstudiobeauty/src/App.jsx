@@ -135,7 +135,7 @@ export default function App() {
                   </a>
                 </div>
 
-                {/* Stats - Hidden on mobile for better spacing */}
+                {/* Estatísticas - escondido no mobile */}
                 <div className="hidden lg:grid grid-cols-3 gap-8 mt-14 pt-10 border-t border-[#d9d3cb]/60">
                   <motion.div
                     initial={{ opacity: 0, y: 10 }}
