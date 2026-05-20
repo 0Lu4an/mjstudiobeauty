@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Phone, Calendar } from 'lucide-react';
+import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -20,7 +21,7 @@ export function Navbar() {
     { label: 'Serviços', href: '#servicos' },
     { label: 'Portfolio', href: '#portfolio' },
     { label: 'Depoimentos', href: '#depoimentos' },
-    { label: 'Contato', href: '#contato' }
+    { label: 'Informações', href: '#informacoes' }
   ];
 
   return (
@@ -123,51 +124,150 @@ export function Navbar() {
       {/* Mobile Menu */}
       <AnimatePresence>
         {mobileMenuOpen && (
-          <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            transition={{ duration: 0.3 }}
-            className="fixed inset-0 z-40 lg:hidden bg-white"
-          >
-            <div className="flex flex-col h-full pt-24 pb-8 px-6">
-              <nav className="flex-1 flex flex-col gap-6">
+          <>
+            {/* Overlay */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              transition={{ duration: 0.25 }}
+              className="fixed inset-0 bg-black/40 backdrop-blur-sm z-40 lg:hidden"
+              onClick={() => setMobileMenuOpen(false)}
+            />
+
+            {/* Menu */}
+            <motion.div
+              initial={{ x: '100%' }}
+              animate={{ x: 0 }}
+              exit={{ x: '100%' }}
+              transition={{
+                type: 'spring',
+                damping: 30,
+                stiffness: 260
+              }}
+              className="fixed top-0 right-0 h-full w-[88%] max-w-[360px] bg-[#faf8f5]/98 backdrop-blur-2xl z-50 lg:hidden border-l border-[#d9d3cb]/50 shadow-2xl"
+            >
+              
+              {/* Header */}
+              <div className="flex items-center justify-between px-6 py-6 border-b border-[#d9d3cb]/40">
+                <h2 className="text-[28px] font-light tracking-tight text-[#2d2a26]">
+                  MJ Studio{" "}
+                  <span className="italic text-[#b89b6a] font-normal">
+                    Beauty
+                  </span>
+                </h2>
+
+                <button
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="w-10 h-10 rounded-full bg-white shadow-md flex items-center justify-center text-[#2d2a26]"
+                >
+                  <X className="w-5 h-5" />
+                </button>
+              </div>
+
+              {/* Links */}
+              <div className="flex flex-col px-6 py-8">
                 {navLinks.map((link, index) => (
                   <motion.a
                     key={link.label}
                     href={link.href}
-                    initial={{ opacity: 0, x: -20 }}
+                    onClick={(e) => {
+                      e.preventDefault();
+
+                      if (link.href === '#') {
+                        window.scrollTo({
+                          top: 0,
+                          behavior: 'smooth',
+                        });
+                      } else {
+                        const targetId = link.href.replace('#', '');
+                        const element = document.getElementById(targetId);
+
+                        if (element) {
+                          element.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start',
+                          });
+                        }
+                      }
+
+                      setTimeout(() => {
+                        setMobileMenuOpen(false);
+                      }, 150);
+                    }}
+                    initial={{ opacity: 0, x: 20 }}
                     animate={{ opacity: 1, x: 0 }}
-                    transition={{ delay: index * 0.1 }}
-                    onClick={() => setMobileMenuOpen(false)}
-                    className="text-2xl font-light text-[#1a1a1a] hover:text-[#666] transition-colors"
+                    transition={{ delay: index * 0.08 }}
+                    className="group flex items-center justify-between py-5 border-b border-[#e7e1d8]/60 text-[#2d2a26] hover:text-[#b89b6a] transition-all duration-300"
                   >
-                    {link.label}
+                    <span className="text-[22px] font-light tracking-tight">
+                      {link.label}
+                    </span>
+
+                    <span className="opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300 text-[#b89b6a]">
+                      →
+                    </span>
                   </motion.a>
                 ))}
-              </nav>
+              </div>
 
-              <div className="space-y-4 pt-8 border-t border-[#e5e5e5]">
-                <a
-                  href="tel:81993918154"
-                  className="flex items-center gap-3 text-[#666] hover:text-[#1a1a1a] transition-colors"
-                >
-                  <Phone className="w-5 h-5" />
-                  <span className="font-light">(81) 99391-8154</span>
-                </a>
+              {/* Bottom */}
+              <div className="absolute bottom-0 left-0 w-full p-6 border-t border-[#d9d3cb]/40 bg-white/40 backdrop-blur-xl">
+                
+                {/* Contact */}
+                <div className="mb-5">
+                  <p className="text-[11px] uppercase tracking-[0.25em] text-[#8b7e6f] mb-3">
+                    Contato
+                  </p>
 
+                  <a
+                    href="tel:81993918154"
+                    className="flex items-center gap-3 text-[#2d2a26]"
+                  >
+                    <div className="w-10 h-10 rounded-full bg-[#c9a869]/15 flex items-center justify-center">
+                      <Phone className="w-4 h-4 text-[#c9a869]" />
+                    </div>
+
+                    <span className="text-sm font-medium">
+                      (81) 99391-8154
+                    </span>
+                  </a>
+                </div>
+
+                {/* CTA */}
                 <a
-                  href="https://wa.me/5581993918154?text=Olá! Gostaria de agendar uma consulta no MJ Studio Beauty."
+                  href="https://wa.me/5581993918154?text=Olá! Gostaria de agendar um horário no MJ Studio Beauty."
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full inline-flex bg-[#1a1a1a] text-white px-6 py-4 rounded-full text-sm font-light tracking-wide hover:bg-[#2a2a2a] transition-colors items-center justify-center gap-2"
+                  className="w-full bg-[#2d2a26] text-white rounded-full py-4 flex items-center justify-center gap-2 text-sm font-medium tracking-wide hover:bg-[#3b352f] transition-all duration-300 shadow-xl shadow-black/10"
                 >
-                  <Calendar className="w-4 h-4 opacity-80" />
+                  <Calendar className="w-4 h-4" />
                   Agendar Consulta
                 </a>
+
+                {/* Social */}
+                <div className="flex items-center justify-center gap-4 mt-6">
+                  <a
+                    href="https://www.instagram.com/mj_studiobeauty/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-11 h-11 rounded-full bg-white shadow-md flex items-center justify-center text-[#2d2a26] hover:bg-[#c9a869] hover:text-white transition-all duration-300"
+                  >
+                    <FaInstagram className="w-4 h-4" />
+                  </a>
+
+                  <a
+                    href="https://wa.me/5581993918154"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-11 h-11 rounded-full bg-white shadow-md flex items-center justify-center text-[#2d2a26] hover:bg-[#25D366] hover:text-white transition-all duration-300"
+                  >
+                    <FaWhatsapp className="w-4 h-4" />
+                  </a>
+                </div>
               </div>
-             </div>
-          </motion.div>
+            </motion.div>
+          </>
         )}
       </AnimatePresence>
     </>

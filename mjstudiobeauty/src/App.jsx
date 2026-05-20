@@ -22,20 +22,20 @@ export default function App() {
   const services = [
     {
       icon: Sparkles,
-      title: 'Micropigmentação',
-      description: 'Técnica avançada para sobrancelhas, lábios e olhos com resultado natural',
+      title: 'Design com Henna',
+      description: 'Técnica avançada para sobrancelhas com resultado natural e duradouro',
       image: 'https://images.unsplash.com/photo-1621691553102-66d4ecdb1be2?w=800&q=80'
     },
     {
       icon: Award,
-      title: 'Design de Sobrancelhas',
+      title: 'Maquiagem Profissional',
       description: 'Modelagem personalizada que valoriza sua expressão facial única',
       image: 'https://images.unsplash.com/photo-1634052970539-224813476367?w=800&q=80'
     },
     {
       icon: Heart,
-      title: 'Lash Lifting',
-      description: 'Curvatura natural dos cílios com efeito volumoso e duradouro',
+      title: 'Spa labial',
+      description: 'Tratamento revitalizante para lábios com resultado imediato e duradouro',
       image: 'https://images.unsplash.com/photo-1653640869615-e9878a2c8344?w=800&q=80'
     }
   ];
@@ -50,17 +50,17 @@ export default function App() {
 
   const testimonials = [
     {
-      name: 'Maria Clara',
+      name: 'Meire Ellen',
       text: 'Sério, eu amei demais o resultado. Minhas sobrancelhas ficaram perfeitas.',
       rating: 5
     },
     {
-      name: 'Mariana',
+      name: 'Jaíne Carla',
       text: 'Atendimento maravilhoso e um cuidado enorme em cada detalhe. Já quero voltar de novo.',
       rating: 5
     },
     {
-      name: 'Jully Costa',
+      name: 'Mari Azevedo',
       text: 'Ficou muito mais natural do que eu imaginava. Todo mundo elogiou quando eu cheguei em casa kkkkk',
       rating: 5
     }
@@ -112,7 +112,7 @@ export default function App() {
                 </h1>
 
                 <p className="text-[15px] lg:text-base xl:text-lg text-[#6b6256] font-normal leading-relaxed mb-9 lg:mb-11 max-w-lg mx-auto lg:mx-0">
-                  Onde técnica refinada encontra arte premium. Especialistas em micropigmentação e design de sobrancelhas de alta performance.
+                  Onde técnica refinada encontra arte premium. Especialista em design de sobrancelhas e maquiagem.
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-3.5 justify-center lg:justify-start mb-12 lg:mb-0">
@@ -142,7 +142,7 @@ export default function App() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.8 }}
                   >
-                    <div className="text-3xl xl:text-4xl font-light text-[#2d2a26] mb-2">500+</div>
+                    <div className="text-3xl xl:text-4xl font-light text-[#2d2a26] mb-2">100+</div>
                     <div className="text-[11px] tracking-wider uppercase text-[#8b7e6f] font-medium">Clientes</div>
                   </motion.div>
                   <motion.div
@@ -150,7 +150,7 @@ export default function App() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.9 }}
                   >
-                    <div className="text-3xl xl:text-4xl font-light text-[#2d2a26] mb-2">8+</div>
+                    <div className="text-3xl xl:text-4xl font-light text-[#2d2a26] mb-2">2+</div>
                     <div className="text-[11px] tracking-wider uppercase text-[#8b7e6f] font-medium">Anos</div>
                   </motion.div>
                   <motion.div
@@ -204,7 +204,10 @@ export default function App() {
         </section>
 
         {/* Services Section */}
-        <section id="servicos" className="py-14 lg:py-24 bg-gradient-to-b from-white to-[#faf8f5]">
+        <section
+          id="servicos"
+          className="scroll-mt-28 lg:scroll-mt-36 py-14 lg:py-24 bg-gradient-to-b from-white to-[#faf8f5]"
+        >
           <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
             {/* Header */}
             <div className="text-center mb-10 lg:mb-16">
@@ -260,7 +263,10 @@ export default function App() {
         </section>
 
         {/* Portfolio Section */}
-        <section id="portfolio" className="py-14 lg:py-24 bg-[#faf8f5]">
+        <section
+          id="portfolio"
+          className="scroll-mt-28 lg:scroll-mt-36 py-14 lg:py-24 bg-[#faf8f5]"
+        >
           <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
             <div className="text-center mb-10 lg:mb-16">
               <div className="inline-flex items-center gap-2 mb-4 bg-white/60 backdrop-blur-sm px-4 py-2 rounded-full">
@@ -270,7 +276,7 @@ export default function App() {
                 </span>
               </div>
               <h2 className="text-3xl lg:text-4xl xl:text-5xl font-light mt-5 text-[#2d2a26] leading-tight">
-                Nosso Trabalho
+                Meu Trabalho
               </h2>
             </div>
 
@@ -301,7 +307,10 @@ export default function App() {
         </section>
 
         {/* Testimonials Section */}
-        <section id="depoimentos" className="py-14 lg:py-24 bg-gradient-to-b from-white to-[#faf8f5]">
+        <section
+          id="depoimentos"
+          className="scroll-mt-28 lg:scroll-mt-36 py-14 lg:py-24 bg-gradient-to-b from-white to-[#faf8f5]"
+        >
           <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
             <div className="text-center mb-10 lg:mb-16">
               <div className="inline-flex items-center gap-2 mb-4 bg-[#c9a869]/10 px-4 py-2 rounded-full">
@@ -350,7 +359,10 @@ export default function App() {
         </section>
 
         {/* Location Section */}
-        <section id="contato" className="py-14 lg:py-24 bg-[#faf8f5]">
+        <section
+          id="informacoes"
+          className="scroll-mt-28 lg:scroll-mt-36 py-14 lg:py-24 bg-[#faf8f5]"
+        >
           <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
             <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
               {/* Info */}
@@ -462,7 +474,7 @@ export default function App() {
                   MJ Studio <span className="italic text-[#c9a869]">Beauty</span>
                 </h3>
                 <p className="text-sm text-[#d9d3cb] font-normal leading-relaxed max-w-md mb-6">
-                  Premium beauty studio especializado em micropigmentação e design de sobrancelhas.
+                  Premium beauty studio especializado em maquiagem e design de sobrancelhas.
                 </p>
                 <div className="flex gap-3">
                   <a
@@ -483,24 +495,16 @@ export default function App() {
                     <FaWhatsapp className="w-4 h-4" />
                   </a>
 
-                  <a
-                    href="mailto:mj_studiobeauty@gmail.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-10 h-10 rounded-full bg-white/10 backdrop-blur-sm flex items-center justify-center hover:bg-[#c9a869] hover:scale-110 transition-all duration-300"
-                  >
-                    <Mail className="w-4 h-4" />
-                  </a>
                 </div>
               </div>
 
               <div>
                 <h4 className="text-xs tracking-wide uppercase mb-6 text-[#c9a869] font-medium">Serviços</h4>
                 <ul className="space-y-3 text-sm font-normal text-[#d9d3cb]">
-                  <li><a href="#servicos" className="hover:text-[#c9a869] transition-colors duration-300">Micropigmentação</a></li>
-                  <li><a href="#servicos" className="hover:text-[#c9a869] transition-colors duration-300">Design de Sobrancelhas</a></li>
-                  <li><a href="#servicos" className="hover:text-[#c9a869] transition-colors duration-300">Lash Lifting</a></li>
-                  <li><a href="#contato" className="hover:text-[#c9a869] transition-colors duration-300">Consultoria</a></li>
+                  <li><a href="#servicos" className="hover:text-[#c9a869] transition-colors duration-300">Maquiagem</a></li>
+                  <li><a href="#servicos" className="hover:text-[#c9a869] transition-colors duration-300">Design com Henna</a></li>
+                  <li><a href="#servicos" className="hover:text-[#c9a869] transition-colors duration-300">Spa labial</a></li>
+                  <li><a href="#informacoes" className="hover:text-[#c9a869] transition-colors duration-300">Consultoria</a></li>
                 </ul>
               </div>
 
@@ -515,17 +519,15 @@ export default function App() {
                     <Phone className="w-4 h-4 flex-shrink-0 text-[#c9a869]" />
                     <span>(81) 99391-8154</span>
                   </li>
-                  <li className="flex items-center gap-2">
-                    <Mail className="w-4 h-4 flex-shrink-0 text-[#c9a869]" />
-                    <span>contato@mjstudio.com</span>
-                  </li>
                 </ul>
               </div>
             </div>
 
             <div className="pt-8 border-t border-white/10 flex flex-col lg:flex-row items-center justify-between gap-4 text-xs text-[#d9d3cb]">
               
-              <p>© 2026 MJ Studio Beauty. Todos os direitos reservados.</p>
+              <p>
+                © {new Date().getFullYear()} MJ Studio Beauty. Todos os direitos reservados.
+              </p>
 
               <p className="text-[#d9d3cb] text-xs text-center font-light">
                 by{" "}
