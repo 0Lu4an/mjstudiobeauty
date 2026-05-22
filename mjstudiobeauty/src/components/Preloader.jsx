@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 export function Preloader() {
   const [isLoading, setIsLoading] = useState(true);
+  const isMobile = window.innerWidth < 1024;
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -14,7 +15,7 @@ export function Preloader() {
 
   return (
     <AnimatePresence mode="wait">
-      {isLoading && (
+      {isLoading && !isMobile && (
         <motion.div
           initial={{ opacity: 1 }}
           exit={{

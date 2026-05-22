@@ -24,28 +24,28 @@ export default function App() {
       icon: Sparkles,
       title: 'Design com Henna',
       description: 'Técnica avançada para sobrancelhas com resultado natural e duradouro',
-      image: 'https://images.unsplash.com/photo-1621691553102-66d4ecdb1be2?w=800&q=80'
+      image: 'https://cdn.discordapp.com/attachments/1506696566348451892/1506696632199151738/image.png?ex=6a0f3416&is=6a0de296&hm=14f92f112f593bbc557b063229834784b66152ccd4c797a01a48ac91736422c3&'
     },
     {
       icon: Award,
       title: 'Maquiagem Profissional',
       description: 'Modelagem personalizada que valoriza sua expressão facial única',
-      image: 'https://images.unsplash.com/photo-1634052970539-224813476367?w=800&q=80'
+      image: 'https://cdn.discordapp.com/attachments/1506696566348451892/1506696631704092692/image.png?ex=6a0f3416&is=6a0de296&hm=cfafefeda22259ea86ab44a0ce9d55b5e1aa9eed5deb38276cc51018c3c09788&'
     },
     {
       icon: Heart,
       title: 'Spa labial',
       description: 'Tratamento revitalizante para lábios com resultado imediato e duradouro',
-      image: 'https://images.unsplash.com/photo-1653640869615-e9878a2c8344?w=800&q=80'
+      image: 'https://cdn.discordapp.com/attachments/1506696566348451892/1506696632748478514/image.png?ex=6a0f3416&is=6a0de296&hm=36886fe336758fc8510c2a6dfe230dcab9962f1339cc62a9805c81d084284af0&'
     }
   ];
 
   const portfolio = [
-    { id: 1, image: 'https://images.unsplash.com/photo-1759262151080-e05ba1c6294f?w=800&q=80', span: 'col-span-2 row-span-2' },
-    { id: 2, image: 'https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=600&q=80', span: '' },
-    { id: 3, image: 'https://images.unsplash.com/photo-1630595271375-5073a6c0638b?w=600&q=80', span: '' },
-    { id: 4, image: 'https://images.unsplash.com/photo-1635073912661-d55add03c6e6?w=600&q=80', span: '' },
-    { id: 5, image: 'https://images.unsplash.com/photo-1544161558-d5fa96ee28c6?w=600&q=80', span: '' }
+    { id: 1, image: 'https://cdn.discordapp.com/attachments/1506696566348451892/1506698395740405920/image.png?ex=6a0f35ba&is=6a0de43a&hm=043abac60fcbe4e1097b0f973d6ee561d211eaf3ddcb34b3bb5738cd230a82af', span: 'col-span-2 row-span-2' },
+    { id: 2, image: 'https://cdn.discordapp.com/attachments/1506696566348451892/1506697577658192032/image.png?ex=6a0f34f7&is=6a0de377&hm=eb75b4d241712be3b4e30a80ec6c4e6ce870f388515e7911854a7411fecaf7e4', span: '' },
+    { id: 3, image: 'https://cdn.discordapp.com/attachments/1506696566348451892/1506697861813768202/image.png?ex=6a1086bb&is=6a0f353b&hm=d418c1e6f018ffbf0275d91a6839f8441fc453dcbb3dd8ef3aabec96f8fb84a6', span: '' },
+    { id: 4, image: 'https://cdn.discordapp.com/attachments/1506696566348451892/1506697680200405213/image.png?ex=6a0f3510&is=6a0de390&hm=2b8058fb8061b7024945ae6bb3c1b93f712906377f2e70cb966338851c673a76', span: '' },
+    { id: 5, image: 'https://cdn.discordapp.com/attachments/1506696566348451892/1507181209497768047/image.png?ex=6a10f762&is=6a0fa5e2&hm=3977a38a89345c8d1d8835120d7e7831c9551cdf02a6c66ec8f71c3ac8e17a09', span: '', position: 'object-[center_15%]' }
   ];
 
   const testimonials = [
@@ -75,7 +75,7 @@ export default function App() {
         <WhatsAppFloat />
 
         {/* Hero Section */}
-        <section className="relative min-h-[92vh] lg:min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-[#faf8f5] via-[#f5f3f0] to-[#f0ede8]">
+        <section className="relative min-h-screen md:min-h-[850px] lg:min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-[#faf8f5] via-[#f5f3f0] to-[#f0ede8]">
           {/* Subtle Texture */}
           <div className="absolute inset-0 opacity-[0.03]">
             <div className="absolute inset-0" style={{
@@ -84,8 +84,8 @@ export default function App() {
             }} />
           </div>
 
-          <div className="relative z-10 w-full max-w-[1400px] mx-auto px-6 lg:px-12 py-16 lg:py-0">
-            <div className="grid lg:grid-cols-[0.9fr_0.8fr] gap-16 xl:gap-24 items-center">
+          <div className="relative z-10 w-full max-w-[1400px] mx-auto px-6 lg:px-12 py-20 lg:py-0">
+            <div className="grid lg:grid-cols-[0.9fr_0.8fr] gap-10 lg:gap-16 xl:gap-24 items-center">
               {/* Left Content */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -106,12 +106,12 @@ export default function App() {
                   </span>
                 </motion.div>
 
-                <h1 className="text-[2.5rem] sm:text-[3.25rem] lg:text-[4rem] xl:text-[5rem] leading-[0.95] tracking-tight mb-6 lg:mb-7">
+                <h1 className="text-[3rem] sm:text-[3.25rem] lg:text-[4rem] xl:text-[5rem] leading-[0.95] tracking-tight mb-6 lg:mb-7">
                   <span className="block font-light text-[#2d2a26]">MJ Studio</span>
                   <span className="block font-normal italic text-[#8b7e6f] mt-1">Beauty</span>
                 </h1>
 
-                <p className="text-[15px] lg:text-base xl:text-lg text-[#6b6256] font-normal leading-relaxed mb-9 lg:mb-11 max-w-lg mx-auto lg:mx-0">
+                <p className="text-[15px] lg:text-base xl:text-lg text-[#6b6256] font-normal leading-relaxed mb-9 lg:mb-11 max-w-md mx-auto lg:mx-0">
                   Onde técnica refinada encontra arte premium. Especialista em design de sobrancelhas e maquiagem.
                 </p>
 
@@ -120,19 +120,65 @@ export default function App() {
                     href="https://wa.me/5581993918154?text=Olá! Gostaria de agendar um horário no MJ Studio Beauty."
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group"
+                    className="group hidden lg:block"
                   >
-                    <button className="w-full sm:w-auto bg-[#2d2a26] text-[#faf8f5] px-8 py-3.5 rounded-full text-sm font-medium tracking-wide hover:bg-[#3d3832] transition-all duration-300 hover:shadow-2xl hover:shadow-black/20 flex items-center justify-center gap-2 hover:scale-[1.02]">
-                      <Calendar className="w-[17px] h-[17px]" />
-                      Agendar Consulta
-                      <span className="opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300">→</span>
+                    <button className="relative overflow-hidden w-full sm:w-auto bg-[#2d2a26] text-[#faf8f5] px-8 py-3.5 rounded-full text-sm font-medium tracking-wide transition-all duration-300 hover:shadow-2xl hover:shadow-black/30 flex items-center justify-center gap-2 hover:scale-[1.03] before:absolute before:inset-0 before:bg-gradient-to-r before:from-transparent before:via-white/10 before:to-transparent before:-translate-x-[200%] hover:before:translate-x-[200%] before:transition-transform before:duration-1000">
+                      <Calendar className="w-[17px] h-[17px] relative z-10" />
+
+                      <span className="relative z-10">
+                        Agendar Consulta
+                      </span>
+
+                      <span className="opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-300 relative z-10">
+                        →
+                      </span>
                     </button>
                   </a>
-                  <a href="#servicos">
+                  <a href="#servicos" className="hidden lg:block">
                     <button className="w-full sm:w-auto bg-white/80 backdrop-blur-sm text-[#2d2a26] border border-[#d9d3cb] px-8 py-3.5 rounded-full text-sm font-medium tracking-wide hover:border-[#c9a869] hover:bg-white hover:shadow-lg hover:shadow-[#c9a869]/10 transition-all duration-300">
                       Nossos Serviços
                     </button>
                   </a>
+                </div>
+
+                
+                {/* MOBILE IMAGE */}
+                <div className="lg:hidden mt-8 flex flex-col items-center gap-4">
+
+                  <div className="relative w-full max-w-[280px] rounded-[28px] overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.12)]">
+
+                    <img
+                      src="https://cdn.discordapp.com/attachments/1506696566348451892/1507181270017245276/image.png?ex=6a10f770&is=6a0fa5f0&hm=2a81cd5898a82c20e7c5c8aa90a2ecd60f82daf1b559ce0eafc87f9cf0861467"
+                      alt="MJ Studio Beauty"
+                      className="w-full h-[250px] object-cover"
+                    />
+
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#2d2a26]/35 via-transparent to-transparent" />
+
+                    <div className="absolute bottom-4 left-4 right-4 backdrop-blur-md bg-white/10 border border-white/20 rounded-2xl px-4 py-3">
+                      <p className="text-white text-[11px] font-medium text-center">
+                        Beleza, elegância e autoestima em cada detalhe.
+                      </p>
+                    </div>
+
+                  </div>
+
+                  {/* BOTÃO MOBILE */}
+                  <a
+                    href="https://wa.me/5581993918154?text=Olá! Gostaria de agendar um horário no MJ Studio Beauty."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full max-w-[300px]"
+                  >
+                    <button className="w-full bg-[#2d2a26] text-white py-4 rounded-full text-sm font-medium shadow-[0_20px_60px_rgba(0,0,0,0.12)] flex items-center justify-center gap-2 hover:scale-[1.02] hover:bg-[#3a342e] transition-all duration-300">
+
+                      <Calendar className="w-4 h-4" />
+
+                      Agendar Consulta
+
+                    </button>
+                  </a>
+
                 </div>
 
                 {/* Estatísticas - escondido no mobile */}
@@ -173,7 +219,7 @@ export default function App() {
               >
                 <div className="relative aspect-[0.82/1] max-h-[720px] rounded-[24px] overflow-hidden shadow-2xl shadow-black/10">
                   <img
-                    src="https://images.unsplash.com/photo-1776482127816-98d2245d22a6?w=1200&q=90"
+                    src="https://cdn.discordapp.com/attachments/1506696566348451892/1507181270017245276/image.png?ex=6a10f770&is=6a0fa5f0&hm=2a81cd5898a82c20e7c5c8aa90a2ecd60f82daf1b559ce0eafc87f9cf0861467"
                     alt="MJ Studio Beauty Interior"
                     className="w-full h-full object-cover"
                   />
@@ -234,22 +280,21 @@ export default function App() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}
-                  className="group"
+                  className="group hover:-translate-y-2 transition-all duration-500"
                 >
-                  <div className="relative aspect-[4/4.5] lg:aspect-[4/5] rounded-lg overflow-hidden mb-4 shadow-xl shadow-black/10 group-hover:shadow-2xl group-hover:shadow-black/20 transition-all duration-500">
+                  <div className="relative aspect-square lg:aspect-[4/5] rounded-lg overflow-hidden mb-3 shadow-xl shadow-black/10 group-hover:shadow-2xl group-hover:shadow-black/20 transition-all duration-500">
                     <img
                       src={service.image}
                       alt={service.title}
                       loading="lazy"
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#2d2a26]/60 via-[#2d2a26]/20 to-transparent" />
                     <div className="absolute inset-0 bg-[#c9a869]/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                   </div>
 
                   <div className="flex items-start gap-3.5">
-                    <div className="w-11 h-11 rounded-full bg-gradient-to-br from-[#c9a869]/20 to-[#c9a869]/10 flex items-center justify-center flex-shrink-0 group-hover:from-[#c9a869] group-hover:to-[#b8985a] transition-all duration-300 shadow-md shadow-[#c9a869]/10">
-                      <service.icon className="w-5 h-5 text-[#c9a869] group-hover:text-white transition-colors duration-300" />
+                    <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#c9a869]/20 to-[#c9a869]/10 flex items-center justify-center flex-shrink-0 group-hover:from-[#c9a869] group-hover:to-[#b8985a] transition-all duration-300 shadow-md shadow-[#c9a869]/10">
+                      <service.icon className="w-[22px] h-[22px] text-[#c9a869] group-hover:text-white transition-colors duration-300" />
                     </div>
                     <div>
                       <h3 className="text-base lg:text-lg font-medium mb-1.5 text-[#2d2a26]">{service.title}</h3>
@@ -268,7 +313,7 @@ export default function App() {
           className="scroll-mt-28 lg:scroll-mt-36 py-14 lg:py-24 bg-[#faf8f5]"
         >
           <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
-            <div className="text-center mb-10 lg:mb-16">
+            <div className="text-center mb-7 lg:mb-16">
               <div className="inline-flex items-center gap-2 mb-4 bg-white/60 backdrop-blur-sm px-4 py-2 rounded-full">
                 <div className="w-1.5 h-1.5 rounded-full bg-[#c9a869]" />
                 <span className="text-[11px] lg:text-xs tracking-[0.2em] uppercase text-[#8b7e6f] font-medium">
@@ -295,7 +340,7 @@ export default function App() {
                       src={item.image}
                       alt={`Portfolio ${item.id}`}
                       loading="lazy"
-                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                      className={`w-full h-full object-cover ${item.position || 'object-center'} transition-transform duration-700 group-hover:scale-[1.02]`}
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-[#2d2a26]/30 via-transparent to-transparent" />
                     <div className="absolute inset-0 bg-[#c9a869]/0 group-hover:bg-[#c9a869]/10 transition-colors duration-500" />
@@ -324,7 +369,7 @@ export default function App() {
               </h2>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6">
               {testimonials.map((testimonial, index) => (
                 <motion.div
                   key={testimonial.name}
@@ -332,7 +377,7 @@ export default function App() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}
-                  className="bg-gradient-to-br from-white to-[#faf8f5] p-6 lg:p-8 rounded-lg relative group hover:shadow-xl hover:shadow-black/10 transition-all duration-500 border border-[#d9d3cb]/40"
+                  className="bg-gradient-to-br from-white to-[#faf8f5] p-5 lg:p-8 rounded-[22px] relative group hover:shadow-2xl hover:shadow-black/10 transition-all duration-500 border border-[#d9d3cb]/40 hover:-translate-y-1"
                 >
                   <div className="flex gap-0.5 mb-5">
                     {[...Array(testimonial.rating)].map((_, i) => (
@@ -371,14 +416,17 @@ export default function App() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.8 }}
+                className="bg-white rounded-[32px] p-6 lg:p-8 shadow-[0_20px_60px_rgba(0,0,0,0.06)] border border-[#efe8de]"
               >
-                <div className="inline-flex items-center gap-2 mb-4 bg-white/60 backdrop-blur-sm px-4 py-2 rounded-full">
-                  <div className="w-1.5 h-1.5 rounded-full bg-[#c9a869]" />
-                  <span className="text-[11px] lg:text-xs tracking-[0.2em] uppercase text-[#8b7e6f] font-medium">
-                    Localização
-                  </span>
+                <div className="flex justify-center lg:justify-start">
+                  <div className="inline-flex items-center gap-2 mb-4 bg-white/60 backdrop-blur-sm px-4 py-2 rounded-full">
+                    <div className="w-1.5 h-1.5 rounded-full bg-[#c9a869]" />
+                    <span className="text-[11px] lg:text-xs tracking-[0.2em] uppercase text-[#8b7e6f] font-medium">
+                      Informações
+                    </span>
+                  </div>
                 </div>
-                <h2 className="text-3xl lg:text-4xl xl:text-5xl font-light mt-5 mb-10 text-[#2d2a26] leading-tight">
+                <h2 className="text-[2rem] lg:text-4xl xl:text-5xl font-light mt-5 mb-10 text-[#2d2a26] leading-tight">
                   Visite nosso Studio
                 </h2>
 
@@ -426,7 +474,7 @@ export default function App() {
                   </div>
                 </div>
 
-                <div className="mt-10 pt-8 border-t border-[#d9d3cb]/60">
+                <div className="mt-10 pt-8 border-t border-[#d9d3cb]/60 flex justify-center">
                   <a
                     href="https://wa.me/5581993918154"
                     target="_blank"
@@ -466,15 +514,14 @@ export default function App() {
         </section>
 
         {/* Footer */}
-        <footer className="bg-gradient-to-br from-[#2d2a26] to-[#3d3832] text-[#faf8f5]">
+        <footer className="mt-10 bg-gradient-to-br from-[#2d2a26] to-[#3d3832] text-[#faf8f5]">
           <div className="max-w-[1400px] mx-auto px-6 lg:px-12 py-12 lg:py-16">
-            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 mb-12">
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12 mb-12">
               <div className="lg:col-span-2">
-                <h3 className="text-2xl lg:text-3xl font-light mb-4">
+                <h3 className="text-[1.9rem] lg:text-3xl font-light mb-4">
                   MJ Studio <span className="italic text-[#c9a869]">Beauty</span>
                 </h3>
-                <p className="text-sm text-[#d9d3cb] font-normal leading-relaxed max-w-md mb-6">
-                  Premium beauty studio especializado em maquiagem e design de sobrancelhas.
+                <p className="text-[13px] text-[#d9d3cb] font-normal leading-relaxed max-w-md mb-6">                  Premium beauty studio especializado em maquiagem e design de sobrancelhas.
                 </p>
                 <div className="flex gap-3">
                   <a
@@ -500,7 +547,7 @@ export default function App() {
 
               <div>
                 <h4 className="text-xs tracking-wide uppercase mb-6 text-[#c9a869] font-medium">Serviços</h4>
-                <ul className="space-y-3 text-sm font-normal text-[#d9d3cb]">
+                <ul className="space-y-3 text-[13px] font-normal text-[#d9d3cb]">
                   <li><a href="#servicos" className="hover:text-[#c9a869] transition-colors duration-300">Maquiagem</a></li>
                   <li><a href="#servicos" className="hover:text-[#c9a869] transition-colors duration-300">Design com Henna</a></li>
                   <li><a href="#servicos" className="hover:text-[#c9a869] transition-colors duration-300">Spa labial</a></li>
@@ -510,7 +557,7 @@ export default function App() {
 
               <div>
                 <h4 className="text-xs tracking-wide uppercase mb-6 text-[#c9a869] font-medium">Contato</h4>
-                <ul className="space-y-3 text-sm font-normal text-[#d9d3cb]">
+                <ul className="space-y-3 text-[13px] font-normal text-[#d9d3cb]">
                   <li className="flex items-start gap-2">
                     <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0 text-[#c9a869]" />
                     <span>R. Getúlio Vargas - Centro<br />Joaquim Nabuco - PE</span>
@@ -541,7 +588,7 @@ export default function App() {
                 </a>
               </p>
               
-              <div className="flex gap-6">
+              <div className="flex gap-4 text-[11px]">
                 <a
                   href="#"
                   className="hover:text-[#c9a869] transition-colors duration-300"
