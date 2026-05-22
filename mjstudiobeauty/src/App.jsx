@@ -6,6 +6,17 @@ import { WhatsAppFloat } from './components/WhatsAppFloat';
 import { Preloader } from './components/Preloader';
 import { Sparkles, Award, Heart, Star, MapPin, Phone, Mail, Clock, Calendar } from 'lucide-react';
 import { FaInstagram, FaFacebookF, FaWhatsapp } from 'react-icons/fa';
+import {
+  ftprincipal,
+  fthenna,
+  ftmaquiagem,
+  ftspalabial,
+  ftportfolio1,
+  ftportfolio2,
+  ftportfolio3,
+  ftportfolio4,
+  ftportfolio5
+} from './assets';
 
 export default function App() {
   const { scrollYProgress } = useScroll();
@@ -24,28 +35,28 @@ export default function App() {
       icon: Sparkles,
       title: 'Design com Henna',
       description: 'Técnica avançada para sobrancelhas com resultado natural e duradouro',
-      image: 'https://cdn.discordapp.com/attachments/1506696566348451892/1506696632199151738/image.png?ex=6a0f3416&is=6a0de296&hm=14f92f112f593bbc557b063229834784b66152ccd4c797a01a48ac91736422c3&'
+      image: fthenna
     },
     {
       icon: Award,
       title: 'Maquiagem Profissional',
       description: 'Modelagem personalizada que valoriza sua expressão facial única',
-      image: 'https://cdn.discordapp.com/attachments/1506696566348451892/1506696631704092692/image.png?ex=6a0f3416&is=6a0de296&hm=cfafefeda22259ea86ab44a0ce9d55b5e1aa9eed5deb38276cc51018c3c09788&'
+      image: ftmaquiagem
     },
     {
       icon: Heart,
       title: 'Spa labial',
       description: 'Tratamento revitalizante para lábios com resultado imediato e duradouro',
-      image: 'https://cdn.discordapp.com/attachments/1506696566348451892/1506696632748478514/image.png?ex=6a0f3416&is=6a0de296&hm=36886fe336758fc8510c2a6dfe230dcab9962f1339cc62a9805c81d084284af0&'
+      image: ftspalabial
     }
   ];
 
   const portfolio = [
-    { id: 1, image: 'https://cdn.discordapp.com/attachments/1506696566348451892/1506698395740405920/image.png?ex=6a0f35ba&is=6a0de43a&hm=043abac60fcbe4e1097b0f973d6ee561d211eaf3ddcb34b3bb5738cd230a82af', span: 'col-span-2 row-span-2' },
-    { id: 2, image: 'https://cdn.discordapp.com/attachments/1506696566348451892/1506697577658192032/image.png?ex=6a0f34f7&is=6a0de377&hm=eb75b4d241712be3b4e30a80ec6c4e6ce870f388515e7911854a7411fecaf7e4', span: '' },
-    { id: 3, image: 'https://cdn.discordapp.com/attachments/1506696566348451892/1506697861813768202/image.png?ex=6a1086bb&is=6a0f353b&hm=d418c1e6f018ffbf0275d91a6839f8441fc453dcbb3dd8ef3aabec96f8fb84a6', span: '' },
-    { id: 4, image: 'https://cdn.discordapp.com/attachments/1506696566348451892/1506697680200405213/image.png?ex=6a0f3510&is=6a0de390&hm=2b8058fb8061b7024945ae6bb3c1b93f712906377f2e70cb966338851c673a76', span: '' },
-    { id: 5, image: 'https://cdn.discordapp.com/attachments/1506696566348451892/1507181209497768047/image.png?ex=6a10f762&is=6a0fa5e2&hm=3977a38a89345c8d1d8835120d7e7831c9551cdf02a6c66ec8f71c3ac8e17a09', span: '', position: 'object-[center_15%]' }
+    { id: 1, image: ftportfolio1, span: 'col-span-2 row-span-2' },
+    { id: 2, image: ftportfolio2, span: '' },
+    { id: 3, image: ftportfolio3, span: '' },
+    { id: 4, image: ftportfolio4, span: '' },
+    { id: 5, image: ftportfolio5, span: '', position: 'object-[center_15%]' }
   ];
 
   const testimonials = [
@@ -148,7 +159,7 @@ export default function App() {
                   <div className="relative w-full max-w-[280px] rounded-[28px] overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.12)]">
 
                     <img
-                      src="https://cdn.discordapp.com/attachments/1506696566348451892/1507181270017245276/image.png?ex=6a10f770&is=6a0fa5f0&hm=2a81cd5898a82c20e7c5c8aa90a2ecd60f82daf1b559ce0eafc87f9cf0861467"
+                      src={ftprincipal}
                       alt="MJ Studio Beauty"
                       className="w-full h-[250px] object-cover"
                     />
@@ -219,7 +230,7 @@ export default function App() {
               >
                 <div className="relative aspect-[0.82/1] max-h-[720px] rounded-[24px] overflow-hidden shadow-2xl shadow-black/10">
                   <img
-                    src="https://cdn.discordapp.com/attachments/1506696566348451892/1507181270017245276/image.png?ex=6a10f770&is=6a0fa5f0&hm=2a81cd5898a82c20e7c5c8aa90a2ecd60f82daf1b559ce0eafc87f9cf0861467"
+                    src={ftprincipal}
                     alt="MJ Studio Beauty Interior"
                     className="w-full h-full object-cover"
                   />

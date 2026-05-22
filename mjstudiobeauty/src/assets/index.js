@@ -1,0 +1,9 @@
+export { default as ftprincipal } from './ftprincipal.png';
+export { default as fthenna } from './fthenna.png';
+export { default as ftmaquiagem } from './ftmaquiagem.png';
+export { default as ftspalabial } from './ftspalabial.png';
+export { default as ftportfolio1 } from './ftportfolio1.png';
+export { default as ftportfolio2 } from './ftportfolio2.png';
+export { default as ftportfolio3 } from './ftportfolio3.png';
+export { default as ftportfolio4 } from './ftportfolio4.png';
+export { default as ftportfolio5 } from './ftportfolio5.png';
